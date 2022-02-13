@@ -58,7 +58,7 @@ module debug_ring_expand
 
    // the expanded ports
    generate
-      for(i=0; i<2; i++) begin
+      for(i=0; i<2; i++) begin:name0
          assign chain[i][0] = ext_in[i];
          assign ext_in_ready[i] = chain_ready[i][0];
          assign ext_out[i] = chain[i][PORTS];
