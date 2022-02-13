@@ -28,7 +28,7 @@ module debug_ring_expand
     output dii_flit [1:0] ext_out, input [1:0] ext_out_ready // extension output ports
    );
 
-   genvar i;
+   genvar i; 
 
    dii_flit [1:0][PORTS:0] chain;
    logic [1:0][PORTS:0] chain_ready;
