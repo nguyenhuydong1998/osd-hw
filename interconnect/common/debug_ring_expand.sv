@@ -34,7 +34,7 @@ module debug_ring_expand
    logic [1:0][PORTS:0] chain_ready;
 
    generate
-      for(i=0; i<PORTS; i++) begin
+      for(i=0; i<PORTS; i++) begin:name
          ring_router
            #(.BUFFER_SIZE(BUFFER_SIZE))
          u_router(

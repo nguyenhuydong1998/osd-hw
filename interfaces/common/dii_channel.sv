@@ -29,7 +29,7 @@ package dii_package;
                        input logic        m_last,
                        input logic [15:0] m_data
                        );
-      return dii_flit'{m_valid, m_last, m_data};
+      return dii_flit'({m_valid, m_last, m_data});
    endfunction
 
 endpackage // dii_package
